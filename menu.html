@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Меню — Васильковая полка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== ШАПКА ===== -->
+<header class="header">
+    <div class="logo">
+        <h1>Васильковая полка</h1>
+    </div>
+    <nav class="navigation">
+        <a href="index.html">Главная</a>
+        <a href="menu.html" style="color:#3a9f7a;">Меню</a>
+        <a href="cart.html">Корзина</a>
+    </nav>
+</header>
+
+<!-- ===== СТРАНИЦА МЕНЮ ===== -->
+<section class="menu-page">
+
+    <!-- ===== КАТЕГОРИЯ ===== -->
+    <div class="category">
+        <h2>Брелки</h2>
+        <button class="toggle-button" onclick="toggleCategory('keychains')">
+            Показать товары
+        </button>
+
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="images/keychains_V_1.1.png" alt="Брелок">
+                <h3>Брелок «Мидори»</h3>
+                <p>20 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/keychains_V_1.png')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/keychains_V_2.1.png" alt="Брелок">
+                <h3>Брелок «Мидори, но в клетку»</h3>
+                <p>10 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/keychains_V_2.png')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/keychains_V_3.1.png" alt="Брелок">
+                <h3>Брелок «Змейка»</h3>
+                <p>10 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/keychains_V_3.png')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/keychains_liz_1.jpg" alt="Брелок">
+                <h3>Брелок «Пудинги»</h3>
+                <p>20 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/keychains_liz_1.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/keychains_liz_2.jpg" alt="Брелок">
+                <h3>Брелок «Без головы»</h3>
+                <p>10 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/keychains_liz_2.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/keychains_liz_3.jpg" alt="Брелок">
+                <h3>Брелок «Да-да, бизнес»</h3>
+                <p>10 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/keychains_liz_3.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <!-- СКРЫТЫЕ ТОВАРЫ -->
+            <div class="hidden-products" id="keychains">
+                
+            <div class="product-card">
+                <img src="images/keychains_liz_4.jpg" alt="Брелок">
+                <h3>Брелок «Фарин»</h3>
+                <p>15 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/keychains_liz_4.jpg')">
+                 В корзину
+                </button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/keychains_liz_5.jpg" alt="Брелок">
+                <h3>Брелок «Недовольный»</h3>
+                <p>10 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/keychains_liz_5.jpg')">
+                 В корзину
+                </button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/keychains_liz_6.jpg" alt="Брелок">
+                <h3>Брелок «Покушали, сидят»</h3>
+                <p>10 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/keychains_liz_6.jpg')">
+                 В корзину
+                </button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/keychains_liz_7.jpg" alt="Брелок">
+                <h3>Брелок «Блонда»</h3>
+                <p>10 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/keychains_liz_7.jpg')">
+                 В корзину
+                </button>
+            </div>
+        
+            </div>
+        </div>
+            
+        </div>
+    </div>
+
+    <!-- ===== КАТЕГОРИЯ ===== -->
+    <div class="category">
+        <h2>Значки</h2>
+        <button class="toggle-button" onclick="toggleCategory('pins')">
+            Показать товары
+        </button>
+
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="images/pins_liz_1.jpg" alt="Брелок">
+                <h3>Значёк «Наруто»</h3>
+                <p>8 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/pins_liz_1.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/pins_liz_2.jpg" alt="Брелок">
+                <h3>Значёк «Фарин»</h3>
+                <p>10 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/pins_liz_2.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/pins_liz_3.jpg" alt="Брелок">
+                <h3>Значёк «Голодный»</h3>
+                <p>10 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/pins_liz_3.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/pins_liz_4.jpg" alt="Брелок">
+                <h3>Значёк «Зверь внутри»</h3>
+                <p>8 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/pins_liz_4.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/pins_V_1.1.png" alt="Брелок">
+                <h3>Значёк «Оленёнок»</h3>
+                <p>5 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/pins_V_1.png')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/pins_V_2.1.png" alt="Брелок">
+                <h3>Значёк «Богомол»</h3>
+                <p>5 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/pins_V_2.png')">
+                 В корзину
+                </button>
+            </div>
+            <!-- СКРЫТЫЕ ТОВАРЫ -->
+            <div class="hidden-products" id="pins">
+                <!-- карточки товаров 7–12 -->
+                <div class="product-card">
+                    <img src="images/pins_V_3.1.png" alt="Брелок">
+                    <h3>Знач5ёк «Гриб»</h3>
+                    <p> BYN</p>
+                    <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/pins_V_3.png')">
+                 В корзину
+                </button>
+                </div>
+                <div class="product-card">
+                    <img src="images/pins_X_1.1.png" alt="Брелок">
+                    <h3>Значёк «Собака-носака»</h3>
+                    <p>7 BYN</p>
+                    <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/pins_X_1.PNG')">
+                 В корзину
+                </button>
+                </div>
+                <div class="product-card">
+                    <img src="images/pins_X_2.png" alt="Брелок">
+                    <h3>Значёк «Зелёный гусь»</h3>
+                    <p>7 BYN</p>
+                    <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/pins_X_2.png')">
+                 В корзину
+                </button>
+                </div>
+                <div class="product-card">
+                    <img src="images/pins_X_3.png" alt="Брелок">
+                    <h3>Значёк «Лев в шоке»</h3>
+                    <p>7 BYN</p>
+                    <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/pins_X_3.png')">
+                 В корзину
+                </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Открытки</h2>
+        <button class="toggle-button" onclick="toggleCategory('cards')">
+            Показать товары
+        </button>
+
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="images/cards1.1.jpg" alt="Брелок">
+                <h3>Открытка «Путешественники»</h3>
+                <p>4 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/cards1.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/cards2.jpg" alt="Брелок">
+                <h3>Открытка «Топь»</h3>
+                <p>4 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/cards2.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/cards3.1.jpg" alt="Брелок">
+                <h3>Открытка «ХСР»</h3>
+                <p>4 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/cards3.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/cards4.1.jpg" alt="Брелок">
+                <h3>Открытка «Автопортрет»</h3>
+                <p>4 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/cards4.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/cards5.1.jpg" alt="Брелок">
+                <h3>Открытка «Эльфы»</h3>
+                <p>4 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/cards5.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/cards6.1.jpg" alt="Брелок">
+                <h3>Открытка «Прекрасный Я»</h3>
+                <p>4 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/cards6.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <!-- СКРЫТЫЕ ТОВАРЫ -->
+            <div class="hidden-products" id="cards">
+                <!-- карточки товаров 7–12 -->
+                <div class="product-card">
+                    <img src="images/cards7.jpg" alt="Брелок">
+                    <h3>Открытка «Автопортрет 2»</h3>
+                    <p>4 BYN</p>
+                    <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/cards7.jpg')">
+                 В корзину
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Наклейки</h2>
+        <button class="toggle-button" onclick="toggleCategory('stickers')">
+            Показать товары
+        </button>
+
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="images/stickers_V_1.1.png" alt="Брелок">
+                <h3>Стикер «Лесные жители»</h3>
+                <p>12 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/stickers_V_1.png')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/stickers_V_2.1.png" alt="Брелок">
+                <h3>Стикер «Космос»</h3>
+                <p>12 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/stickers_V_2.png')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/stickers_V_3.1.png" alt="Брелок">
+                <h3>Стикер «Их история»</h3>
+                <p>12 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/stickers_V_3.png')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                    <img src="images/stickers_X_1.jpg" alt="Брелок">
+                    <h3>Стикер «Догнала»</h3>
+                    <p>12 BYN</p>
+                    <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/stickers_X_1.jpg')">
+                 В корзину
+                </button>
+                </div>
+                <div class="product-card">
+                    <img src="images/stickers_X_2.jpg" alt="Брелок">
+                    <h3>Стикер «Хейдесы»</h3>
+                    <p>12 BYN</p>
+                    <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/stickers_X_2.jpg')">
+                 В корзину
+                </button>
+                </div>
+                <div class="product-card">
+                    <img src="images/stickers_X_3.jpg" alt="Брелок">
+                    <h3>Стикер «Подземелье вкусностей»</h3>
+                    <p>12 BYN</p>
+                    <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/stickers_X_3.jpg')">
+                 В корзину
+                </button>
+                </div>
+            <!-- СКРЫТЫЕ ТОВАРЫ -->
+            <div class="hidden-products" id="stickers">
+                <!-- карточки товаров 7–12 -->
+                <div class="product-card">
+                    <img src="images/stickers_liz_1.jpg" alt="Брелок">
+                    <h3>Стикер «Котяки»</h3>
+                    <p>12 BYN</p>
+                    <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/stickers_liz_1.jpg')">
+                 В корзину
+                </button>
+                </div>
+                <div class="product-card">
+                    <img src="images/stickers_liz_2.jpg" alt="Брелок">
+                    <h3>Стикер «Прекрасные твари»</h3>
+                    <p>12 BYN</p>
+                    <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/stickers_liz_2.jpg')">
+                 В корзину
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Шоперы</h2>
+        <button class="toggle-button" onclick="toggleCategory('bags')">
+            Показать товары
+        </button>
+
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="images/bags1.1.png" alt="Брелок">
+                <h3>Шопер «Зничка»</h3>
+                <p>20 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/bags1.png')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/bags2.png" alt="Брелок">
+                <h3>Шопер «Череп»</h3>
+                <p>20 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/bags2.png')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/bags3.png" alt="Брелок">
+                <h3>Шопер «Болото»</h3>
+                <p>20 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Василёк»', 10, 'images/bags3.png')">
+                 В корзину
+                </button>
+            </div>
+            
+        </div>
+    </div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <p>© 2026 «Васильковая полка»</p>
+</footer>
+
+<!-- ===== JS ===== -->
+<script>
+    function toggleCategory(id) {
+        const hiddenBlock = document.getElementById(id);
+        const button = hiddenBlock
+            .closest('.category')
+            .querySelector('.toggle-button');
+
+        if (hiddenBlock.style.display === "none" || hiddenBlock.style.display === "") {
+            hiddenBlock.style.display = "grid";
+            button.textContent = "Скрыть";
+        } else {
+            hiddenBlock.style.display = "none";
+            button.textContent = "Показать ещё";
+        }
+    }
+
+    function addToCart(button, name, price, image) {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        // Проверяем, есть ли уже такой товар
+        const existingItem = cart.find(item => item.name === name);
+
+        if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            cart.push({
+                name: name,
+                price: price,
+                image: image,
+                quantity: 1
+            });
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        // Визуальная реакция кнопки
+        button.textContent = "Добавлено";
+        button.disabled = true;
+        button.style.backgroundColor = "#9bbfd8";
+    }
+</script>
+
+
+
+</body>
+</html>
