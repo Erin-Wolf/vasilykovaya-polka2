@@ -42,34 +42,104 @@
     <section class="products">
         <h2>Новые товары</h2>
 
-        <!-- Сетка товаров (2 строки по 6 — будет через CSS) -->
         <div class="product-grid">
 
-            
-
-            <div class="product-card"><img src="images/keychains_liz_2.jpg"><h3>Брелок «Голову забыл»</h3><p>Автор: Sad Enot</p><button>В корзину</button></div>
-            <div class="product-card"><img src="images/keychains_liz_3.jpg"><h3>Брелок «Да-да, бизнес»</h3><p>Автор: Sad Enot</p><button>В корзину</button></div>
-            <div class="product-card"><img src="images/keychains_liz_5.jpg"><h3>Брелок «Недовольный»</h3><p>Автор: Sad Enot</p><button>В корзину</button></div>
-            <div class="product-card"><img src="images/keychains_liz_6.jpg"><h3>Брелок «Сели, едят»</h3><p>Автор: Sad Enot</p><button>В корзину</button></div>
-            <div class="product-card"><img src="images/keychains_liz_7.jpg"><h3>Брелок «Блонда»</h3><p>Автор: Sad Enot</p><button>В корзину</button></div>
-            <div class="product-card"><img src="images/pins_liz_4.jpg"><h3>Брелок «Внутренний зверь»</h3><p>Автор: Sad Enot</p><button>В корзину</button></div>
-            <div class="product-card"><img src="images/keychains_V_1.png"><h3>Брелок «Мидори»</h3><p>Автор: Vaikus </p><button>В корзину</button></div>
-            <div class="product-card"><img src="images/keychains_V_2.png"><h3>Значёк «Мидори, но крестиком»</h3><p>Автор: Vaikus</p><button>В корзину</button></div>
-            <div class="product-card"><img src="images/keychains_V_3.png"><h3>Брелок «Змейка»</h3><p>Автор: Vaikus</p><button>В корзину</button></div>
-            <div class="product-card"><img src="images/pins_V_1.png"><h3>Значёк «Оленёнок»</h3><p>Автор: Vaikus</p><button>В корзину</button></div>
-
             <div class="product-card">
-                <img src="images/pins_V_2.png" alt="Авторский брелок">
+                <img src="images/keychains_liz_2.jpg">
+                <h3>Брелок «Голову забыл»</h3>
+                <p>10 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Голову забыл»', 10, 'images/keychains_liz_2.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/keychains_liz_3.jpg">
+                <h3>Брелок «Да-да, бизнес»</h3>
+                <p>10 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Да-да, бизнес»', 10, 'images/keychains_liz_3.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/keychains_liz_5.jpg">
+                <h3>Брелок «Недовольный»</h3>
+                <p>10 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Недовольный»', 10, 'images/keychains_liz_5.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/keychains_liz_6.jpg">
+                <h3>Брелок «Сели, едят»</h3>
+                <p>10 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Недовольный»', 10, 'images/keychains_liz_6.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/keychains_liz_7.jpg">
+                <h3>Брелок «Блонда»</h3>
+                <p>10 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Недовольный»', 10, 'images/keychains_liz_7.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/pins_liz_4.jpg">
+                <h3>Брелок «Внутренний зверь»</h3>
+                <p>8 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Недовольный»', 8, 'images/keychains_liz_4.jpg')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/keychains_V_1.1.png">
+                <h3>Брелок «Мидори»</h3>
+                <p>20 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Недовольный»', 20, 'images/keychains_V_1.1.png')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/keychains_V_2.1.png">
+                <h3>Значёк «Мидори, но в клетку»</h3>
+                <p>10 BYN</p>
+                <button onclick="addToCart(this, 'Значёк «Недовольный»', 10, 'images/keychains_V_2.1.png')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/keychains_V_3.1.png">
+                <h3>Брелок «Змейка»</h3>
+                <p>10 BYN</p>
+                <button onclick="addToCart(this, 'Брелок «Недовольный»', 10, 'images/keychains_V_3.1.png')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/pins_V_1.1.png">
+                <h3>Значёк «Оленёнок»</h3>
+                <p>5 BYN</p>
+                <button onclick="addToCart(this, 'Значёк «Недовольный»', 5, 'images/pins_V_1.1.png')">
+                 В корзину
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="images/pins_V_2.1.png" alt="Авторский брелок">
                 <h3>Значёк «Богомол»</h3>
-                <p>Автор: Vaikus</p>
-                <button>В корзину</button>
+                <p>5 BYN</p>
+                <button onclick="addToCart(this, 'Значёк «Недовольный»', 5, 'images/pins_V_2.1.png')">
+                 В корзину
+                </button>
             </div>
 
             <div class="product-card">
-                <img src="images/pins_V_3.png" alt="Авторская открытка">
+                <img src="images/pins_V_3.1.png" alt="Авторская открытка">
                 <h3>Значёк «Грибы»</h3>
-                <p>Автор: Vaikus</p>
-                <button>В корзину</button>
+                <p>5 BYN</p>
+                <button onclick="addToCart(this, 'Значёк «Недовольный»', 5, 'images/pins_V_3.1.png')">
+                 В корзину
+                </button>
             </div>
         </div>
     </section>
